@@ -1,7 +1,7 @@
 /media
 
 /posting_agent/tasks.py
-/posting_agent/views.py
+
 /posting_agent/__pycache__
 /posting_agent/images
 /posting_agent/.ai_utils.py
