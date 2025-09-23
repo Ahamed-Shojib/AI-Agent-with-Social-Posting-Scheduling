@@ -1,0 +1,11 @@
+/media
+/posting_agent
+/posting_agent/migrations
+/__pycache__
+/posting_agent/__pycache__
+/posting_agent/images
+/posting_agent/.ai_utils.py
+/soicial_scheduler/urls.py
+
+/templates
+
