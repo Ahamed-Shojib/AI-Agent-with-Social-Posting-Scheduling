@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 from rest_framework.routers import DefaultRouter
 from posting_agent.views import ScheduledPostViewSet
 from posting_agent.views import DashboardStatsView, AIInsightView 
-from posting_agent.views import dashboard_view
+from posting_agent.views import dashboard_view, HashtagSuggestionAPIView
 # Initialize DRF Router
 router = DefaultRouter()
 router.register(r'posts', ScheduledPostViewSet)
@@ -15,15 +15,12 @@ router.register(r'posts', ScheduledPostViewSet)
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)), # Exposes /api/posts/ and /api/posts/suggest_hashtags/
-    path('api/dashboard/stats/', DashboardStatsView.as_view(), name='dashboard-stats'),
-    path('api/dashboard/insight/', AIInsightView.as_view(), name='ai-insight'),
 
-    
-    path('dashboard/', dashboard_view, name='dashboard-page'), 
-    # API Paths
-    path('api/', include(router.urls)), 
+    #Dashboard Pages URL
+    path('', dashboard_view, name='dashboard-page'),
     path('api/dashboard/stats/', DashboardStatsView.as_view(), name='dashboard-stats'),
     path('api/dashboard/insight/', AIInsightView.as_view(), name='ai-insight'),
+    path('api/posts/hashtags/', HashtagSuggestionAPIView.as_view(), name='hashtag-suggestion'),
 ]
 
 # Serve media files (images) only during development
