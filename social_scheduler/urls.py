@@ -21,6 +21,9 @@ urlpatterns = [
     path('api/dashboard/stats/', DashboardStatsView.as_view(), name='dashboard-stats'),
     path('api/dashboard/insight/', AIInsightView.as_view(), name='ai-insight'),
     path('api/posts/hashtags/', HashtagSuggestionAPIView.as_view(), name='hashtag-suggestion'),
+   
+    #Task_2 URL
+    path('task2/', include('task_2.urls')),
 ]
 
 # Serve media files (images) only during development

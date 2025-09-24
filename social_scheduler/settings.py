@@ -39,12 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Third-Party Apps
     'rest_framework',
     'django_celery_beat',
-    # Local App
     'posting_agent',
     'corsheaders',
+    'django.contrib.staticfiles',
+    'task_2',
 ]
 
 MIDDLEWARE = [
