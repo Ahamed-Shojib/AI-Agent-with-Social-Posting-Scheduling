@@ -1,0 +1,19 @@
+.product-container {
+    position: relative;
+    max-width: 500px; 
+    margin: auto; 
+}
+
+.text-overlay {
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40; 
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    width: 80%;
+    pointer-events: none; 
+}
