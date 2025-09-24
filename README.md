@@ -87,6 +87,8 @@ You'll need **three separate terminal windows** to run all components simultaneo
 The application will be accessible at `http://127.0.0.1:8000/`. The dashboard will be at `http://127.0.0.1:8000/`.
 
 -----
+![Dashboard UI](./Dashboard.png)
+-----
 
 ### 5. Project Modules
 
@@ -105,6 +107,8 @@ The application will be accessible at `http://127.0.0.1:8000/`. The dashboard wi
 * **`GET /api/dashboard/stats/`**: Get post statistics. Accepts an optional `platform` query parameter (e.g., `?platform=Facebook`).
 * **`GET /api/dashboard/insight/`**: Get AI-generated insights. Accepts an optional `platform` query parameter (e.g., `?platform=Twitter`).
 
+-----
+![Rest API UI](./DRF_Info.png)
 -----
 
 # Task-2: Product Customizer Web Application
@@ -132,8 +136,10 @@ Users can preview their text live on the product, save their designs to the data
 - **Frontend:** HTML, CSS, JavaScript (vanilla)  
 - **Styling:** Bootstrap 5  
 
----
+-----
 
 The application will be accessible at `http://127.0.0.1:8000/task2`.
 
----
+-----
+![Product Text Customization UI](./product_customize.png)
+-----
