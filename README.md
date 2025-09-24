@@ -79,7 +79,7 @@ You'll need **three separate terminal windows** to run all components simultaneo
    celery -A social_scheduler beat --loglevel=info
    ```
 
-The application will be accessible at `http://127.0.0.1:8000/`. The dashboard will be at `http://127.0.0.1:8000/dashboard/`.
+The application will be accessible at `http://127.0.0.1:8000/`. The dashboard will be at `http://127.0.0.1:8000/`.
 
 -----
 
@@ -102,3 +102,33 @@ The application will be accessible at `http://127.0.0.1:8000/`. The dashboard wi
 
 -----
 
+# Task-2: Product Customizer Web Application
+
+This is a simple yet powerful web application built with **Django** and **vanilla JavaScript** that allows users to customize a product (T-shirt) by adding text overlays.
+
+Users can preview their text live on the product, save their designs to the database, and view the most recent community creations.
+
+---
+
+## Features
+
+- **Live Preview** – Instantly see your text displayed on a T-shirt image as you type.  
+- **Save Customizations** – Seamlessly save your design with a single click.  
+- **View Recent Designs** – The homepage shows the five most recent customizations.  
+- **Responsive UI** – Clean, mobile-friendly interface powered by **Bootstrap 5**.  
+- **RESTful Backend** – Django API endpoint handles all design persistence.  
+
+---
+
+## Tech Stack
+
+- **Backend:** Django, Python  
+- **Database:** SQLite (default Django DB)  
+- **Frontend:** HTML, CSS, JavaScript (vanilla)  
+- **Styling:** Bootstrap 5  
+
+---
+
+The application will be accessible at `http://127.0.0.1:8000/task2`.
+
+---
