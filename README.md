@@ -78,6 +78,11 @@ You'll need **three separate terminal windows** to run all components simultaneo
    ```bash
    celery -A social_scheduler beat --loglevel=info
    ```
+4. **Terminal 4: Start the Redis server:**
+   ```bash
+   redis-server --port 6380
+   ```
+-----
 
 The application will be accessible at `http://127.0.0.1:8000/`. The dashboard will be at `http://127.0.0.1:8000/`.
 
