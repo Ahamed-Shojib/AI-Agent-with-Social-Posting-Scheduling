@@ -13,7 +13,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-7">
-                <h2 class="mb-4">Customize Your T-Shirt</h2>
+                <h2 class="mb-4 text-center">Customize Your T-Shirt</h2>
                 <div class="product-container shadow-sm p-3 bg-white rounded">
                     <img src="{% static 'task_2/images/tshirt.png' %}" class="img-fluid" alt="T-Shirt">
                     <div id="text-overlay" class="text-overlay">PREVIEW</div>
@@ -22,7 +22,7 @@
 
             <div class="col-md-5">
                 <div class="controls mt-4 mt-md-0">
-                    <h3 class="mb-3">Add Text</h3>
+                    <h3 class="mb-3">Customized Text</h3>
                     <div class="mb-3">
                         <label for="customText" class="form-label">Enter Your Text:</label>
                         <input type="text" class="form-control" id="customText" placeholder="Your Text Here" maxlength="20">
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="designs mt-5">
-                    <h3>My Recent Designs</h3>
+                    <h3>Recent Designs</h3>
                     <ul id="designsList" class="list-group">
                         {% for design in designs %}
                             <li class="list-group-item">{{ design.custom_text }}</li>
